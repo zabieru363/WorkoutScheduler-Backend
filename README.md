@@ -37,7 +37,7 @@ Esto lo puedes hacer con el siguiente comando: git clone https://github.com/zabi
 - Crea un fichero de variables de entorno .env en el root del proyecto y añádelo a la configuración de arranque del proyecto de tu IDE.
 El nombre de las variables está en ./src/main/java/.../utils/EnvValidator (la única no necesaria es JWT_EXPIRATION, ya que tiene un valor
 por defecto)
-- La variable de entorno DB_URL debe de quedar así: jdbc:postgresql://localhost:5000/workout-schedule, de lo contrario la base de datos no
+- La variable de entorno DB_URL debe de quedar así: jdbc:postgresql://localhost:5000/workout-scheduler, de lo contrario la base de datos no
 se creará correctamente al levantar los contenedores.
 - Genera una palabra secreta para JWT, puedes hacerlo con esta web: https://jwtsecrets.com
 - Pon ese token en tu archivo .env (en la variable JWT_SECRET)
