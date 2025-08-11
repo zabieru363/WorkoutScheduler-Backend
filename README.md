@@ -39,8 +39,8 @@ El nombre de las variables está en ./src/main/java/.../utils/EnvValidator (la �
 por defecto)
 - La variable de entorno DB_URL debe de quedar así: jdbc:postgresql://localhost:5000/workout-scheduler, de lo contrario la base de datos no
 se creará correctamente al levantar los contenedores.
-- Genera una palabra secreta para JWT, puedes hacerlo con esta web: https://jwtsecrets.com
-- Pon ese token en tu archivo .env (en la variable JWT_SECRET)
+- Genera una palabra secreta para JWT, puedes poner el valor que quieras pero te recomiendo hacerlo con esta web: https://jwtsecrets.com
+- Pon ese token que te ha generado la página o lo que hayas decidido cómo palabra secreta en tu archivo .env (en la variable JWT_SECRET)
 - Haz un docker compose up -d para levantar los contenedores (el proyecto ya viene con un docker-compose.yml para crear automaticamente los contenedores)
 - (Opcional): Para que funcione el envío de emails puedes añadir una cuenta de Google que no utilices y crear una contraseña de aplicación.
 Esto puedes hacerlo desde Google Account. Una vez generada la contraseña de aplicación debes ponerla en la variable MAIL_PASSWORD
